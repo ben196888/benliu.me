@@ -5,7 +5,7 @@
   <link href="https://eleventyduo.netlify.app/feed.xml" rel="self"/>
   <link href="https://eleventyduo.netlify.app/"/>
   
-    <updated>2020-12-28T00:00:00+00:00</updated>
+    <updated>2020-12-27T17:00:00+07:00</updated>
   
   <id>https://eleventyduo.netlify.app</id>
   <author>
@@ -17,7 +17,7 @@
     <entry>
       <title>A simple post</title>
       <link href="https://eleventyduo.netlify.app/posts/a-simple-post/"/>
-      <updated>2020-10-18T00:00:00+00:00</updated>
+      <updated>2020-10-17T17:00:00+07:00</updated>
       <id>https://eleventyduo.netlify.app/posts/a-simple-post/</id>
       <content type="html">
         <![CDATA[
@@ -50,7 +50,7 @@
     <entry>
       <title>Another simple post</title>
       <link href="https://eleventyduo.netlify.app/posts/another-simple-post/"/>
-      <updated>2020-10-22T00:00:00+00:00</updated>
+      <updated>2020-10-21T17:00:00+07:00</updated>
       <id>https://eleventyduo.netlify.app/posts/another-simple-post/</id>
       <content type="html">
         <![CDATA[
@@ -83,7 +83,7 @@
     <entry>
       <title>Even yet another simple post</title>
       <link href="https://eleventyduo.netlify.app/posts/even-yet-another-simple-post/"/>
-      <updated>2020-10-25T00:00:00+00:00</updated>
+      <updated>2020-10-24T17:00:00+07:00</updated>
       <id>https://eleventyduo.netlify.app/posts/even-yet-another-simple-post/</id>
       <content type="html">
         <![CDATA[
@@ -116,7 +116,7 @@
     <entry>
       <title>Yet another simple post</title>
       <link href="https://eleventyduo.netlify.app/posts/yet-another-simple-post/"/>
-      <updated>2020-10-29T00:00:00+00:00</updated>
+      <updated>2020-10-28T17:00:00+07:00</updated>
       <id>https://eleventyduo.netlify.app/posts/yet-another-simple-post/</id>
       <content type="html">
         <![CDATA[
@@ -148,7 +148,7 @@
     <entry>
       <title>A post with code samples</title>
       <link href="https://eleventyduo.netlify.app/posts/a-post-with-code-samples/"/>
-      <updated>2020-11-18T00:00:00+00:00</updated>
+      <updated>2020-11-17T17:00:00+07:00</updated>
       <id>https://eleventyduo.netlify.app/posts/a-post-with-code-samples/</id>
       <content type="html">
         <![CDATA[
@@ -172,7 +172,7 @@
     <entry>
       <title>Another post with code samples</title>
       <link href="https://eleventyduo.netlify.app/posts/another-post-with-code-samples/"/>
-      <updated>2020-11-19T00:00:00+00:00</updated>
+      <updated>2020-11-18T17:00:00+07:00</updated>
       <id>https://eleventyduo.netlify.app/posts/another-post-with-code-samples/</id>
       <content type="html">
         <![CDATA[
@@ -196,7 +196,7 @@
     <entry>
       <title>Even yet another post with code samples</title>
       <link href="https://eleventyduo.netlify.app/posts/even-yet-another-post-with-code-samples/"/>
-      <updated>2020-11-23T00:00:00+00:00</updated>
+      <updated>2020-11-22T17:00:00+07:00</updated>
       <id>https://eleventyduo.netlify.app/posts/even-yet-another-post-with-code-samples/</id>
       <content type="html">
         <![CDATA[
@@ -220,7 +220,7 @@
     <entry>
       <title>Yet another post with code samples</title>
       <link href="https://eleventyduo.netlify.app/posts/yet-another-post-with-code-samples/"/>
-      <updated>2020-11-26T00:00:00+00:00</updated>
+      <updated>2020-11-25T17:00:00+07:00</updated>
       <id>https://eleventyduo.netlify.app/posts/yet-another-post-with-code-samples/</id>
       <content type="html">
         <![CDATA[
@@ -244,7 +244,7 @@
     <entry>
       <title>A post with rich media</title>
       <link href="https://eleventyduo.netlify.app/posts/a-post-with-rich-media/"/>
-      <updated>2020-12-20T00:00:00+00:00</updated>
+      <updated>2020-12-19T17:00:00+07:00</updated>
       <id>https://eleventyduo.netlify.app/posts/a-post-with-rich-media/</id>
       <content type="html">
         <![CDATA[
@@ -267,7 +267,7 @@
     <entry>
       <title>Another post with rich media</title>
       <link href="https://eleventyduo.netlify.app/posts/another-post-with-rich-media/"/>
-      <updated>2020-12-21T00:00:00+00:00</updated>
+      <updated>2020-12-20T17:00:00+07:00</updated>
       <id>https://eleventyduo.netlify.app/posts/another-post-with-rich-media/</id>
       <content type="html">
         <![CDATA[
@@ -290,7 +290,7 @@
     <entry>
       <title>Even yet another post with rich media</title>
       <link href="https://eleventyduo.netlify.app/posts/even-yet-another-post-with-rich-media/"/>
-      <updated>2020-12-24T00:00:00+00:00</updated>
+      <updated>2020-12-23T17:00:00+07:00</updated>
       <id>https://eleventyduo.netlify.app/posts/even-yet-another-post-with-rich-media/</id>
       <content type="html">
         <![CDATA[
@@ -313,7 +313,7 @@
     <entry>
       <title>Yet another post with rich media</title>
       <link href="https://eleventyduo.netlify.app/posts/yet-another-post-with-rich-media/"/>
-      <updated>2020-12-28T00:00:00+00:00</updated>
+      <updated>2020-12-27T17:00:00+07:00</updated>
       <id>https://eleventyduo.netlify.app/posts/yet-another-post-with-rich-media/</id>
       <content type="html">
         <![CDATA[
