@@ -1,6 +1,7 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { WebpackManifestPlugin } = require('webpack-manifest-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const isDev = process.env.APP_ENV === 'development';
 
@@ -49,5 +50,6 @@ module.exports = {
   plugins: [
     new WebpackManifestPlugin({ publicPath: '/assets/' }),
     new MiniCssExtractPlugin({ filename: `${baseFilename}.css` }),
+    new CopyWebpackPlugin({ patterns: [{ from: 'static', to: '../' }] }),
   ],
 };
