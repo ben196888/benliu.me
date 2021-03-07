@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://eleventyduo.netlify.app/sitemap.xml
+Sitemap: https://benliu.me/sitemap.xml

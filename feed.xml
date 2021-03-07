@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Eleventy Duo</title>
+  <title>Ben Liu | Full-stack Engineer Blog</title>
   <subtitle></subtitle>
-  <link href="https://eleventyduo.netlify.app/feed.xml" rel="self"/>
-  <link href="https://eleventyduo.netlify.app/"/>
+  <link href="https://benliu.me/feed.xml" rel="self"/>
+  <link href="https://benliu.me/"/>
   
     <updated>2020-12-28T00:00:00+00:00</updated>
   
-  <id>https://eleventyduo.netlify.app</id>
+  <id>https://benliu.me</id>
   <author>
-    <name>Author Name</name>
-    <email>author@site.com</email>
+    <name>Ben Liu</name>
+    <email>ben196888@gmail.com</email>
   </author>
   
     
     <entry>
       <title>A simple post</title>
-      <link href="https://eleventyduo.netlify.app/posts/a-simple-post/"/>
+      <link href="https://benliu.me/posts/a-simple-post/"/>
       <updated>2020-10-18T00:00:00+00:00</updated>
-      <id>https://eleventyduo.netlify.app/posts/a-simple-post/</id>
+      <id>https://benliu.me/posts/a-simple-post/</id>
       <content type="html">
         <![CDATA[
       <p>Meditation gentrify fam, yuccie kickstarter brunch vape. Pitchfork freegan biodiesel bicycle rights. Semiotics flexitarian four loko XOXO raw denim chartreuse. Cray ramps microdosing everyday carry bicycle rights</p>
@@ -49,9 +49,9 @@
     
     <entry>
       <title>Another simple post</title>
-      <link href="https://eleventyduo.netlify.app/posts/another-simple-post/"/>
+      <link href="https://benliu.me/posts/another-simple-post/"/>
       <updated>2020-10-22T00:00:00+00:00</updated>
-      <id>https://eleventyduo.netlify.app/posts/another-simple-post/</id>
+      <id>https://benliu.me/posts/another-simple-post/</id>
       <content type="html">
         <![CDATA[
       <p>Meditation gentrify fam, yuccie kickstarter brunch vape. Pitchfork freegan biodiesel bicycle rights. Semiotics flexitarian four loko XOXO raw denim chartreuse. Cray ramps microdosing everyday carry bicycle rights</p>
@@ -82,9 +82,9 @@
     
     <entry>
       <title>Even yet another simple post</title>
-      <link href="https://eleventyduo.netlify.app/posts/even-yet-another-simple-post/"/>
+      <link href="https://benliu.me/posts/even-yet-another-simple-post/"/>
       <updated>2020-10-25T00:00:00+00:00</updated>
-      <id>https://eleventyduo.netlify.app/posts/even-yet-another-simple-post/</id>
+      <id>https://benliu.me/posts/even-yet-another-simple-post/</id>
       <content type="html">
         <![CDATA[
       <p>Meditation gentrify fam, yuccie kickstarter brunch vape. Pitchfork freegan biodiesel bicycle rights. Semiotics flexitarian four loko XOXO raw denim chartreuse. Cray ramps microdosing everyday carry bicycle rights</p>
@@ -115,9 +115,9 @@
     
     <entry>
       <title>Yet another simple post</title>
-      <link href="https://eleventyduo.netlify.app/posts/yet-another-simple-post/"/>
+      <link href="https://benliu.me/posts/yet-another-simple-post/"/>
       <updated>2020-10-29T00:00:00+00:00</updated>
-      <id>https://eleventyduo.netlify.app/posts/yet-another-simple-post/</id>
+      <id>https://benliu.me/posts/yet-another-simple-post/</id>
       <content type="html">
         <![CDATA[
       <p>Meditation gentrify fam, yuccie kickstarter brunch vape. Pitchfork freegan biodiesel bicycle rights. Semiotics flexitarian four loko XOXO raw denim chartreuse. Cray ramps microdosing everyday carry bicycle rights</p>
@@ -147,9 +147,9 @@
     
     <entry>
       <title>A post with code samples</title>
-      <link href="https://eleventyduo.netlify.app/posts/a-post-with-code-samples/"/>
+      <link href="https://benliu.me/posts/a-post-with-code-samples/"/>
       <updated>2020-11-18T00:00:00+00:00</updated>
-      <id>https://eleventyduo.netlify.app/posts/a-post-with-code-samples/</id>
+      <id>https://benliu.me/posts/a-post-with-code-samples/</id>
       <content type="html">
         <![CDATA[
       <p>Health goth raw denim vaporware waistcoat, vegan neutra glossier. Cronut chartreuse tbh meh schlitz. Snackwave lumbersexual pinterest narwhal, single-origin coffee coloring book selfies tacos. Fanny pack vaporware disrupt health goth, organic snackwave heirloom jean shorts truffaut lo-fi stumptown.</p>
@@ -171,9 +171,9 @@
     
     <entry>
       <title>Another post with code samples</title>
-      <link href="https://eleventyduo.netlify.app/posts/another-post-with-code-samples/"/>
+      <link href="https://benliu.me/posts/another-post-with-code-samples/"/>
       <updated>2020-11-19T00:00:00+00:00</updated>
-      <id>https://eleventyduo.netlify.app/posts/another-post-with-code-samples/</id>
+      <id>https://benliu.me/posts/another-post-with-code-samples/</id>
       <content type="html">
         <![CDATA[
       <p>Health goth raw denim vaporware waistcoat, vegan neutra glossier. Cronut chartreuse tbh meh schlitz. Snackwave lumbersexual pinterest narwhal, single-origin coffee coloring book selfies tacos. Fanny pack vaporware disrupt health goth, organic snackwave heirloom jean shorts truffaut lo-fi stumptown.</p>
@@ -195,9 +195,9 @@
     
     <entry>
       <title>Even yet another post with code samples</title>
-      <link href="https://eleventyduo.netlify.app/posts/even-yet-another-post-with-code-samples/"/>
+      <link href="https://benliu.me/posts/even-yet-another-post-with-code-samples/"/>
       <updated>2020-11-23T00:00:00+00:00</updated>
-      <id>https://eleventyduo.netlify.app/posts/even-yet-another-post-with-code-samples/</id>
+      <id>https://benliu.me/posts/even-yet-another-post-with-code-samples/</id>
       <content type="html">
         <![CDATA[
       <p>Health goth raw denim vaporware waistcoat, vegan neutra glossier. Cronut chartreuse tbh meh schlitz. Snackwave lumbersexual pinterest narwhal, single-origin coffee coloring book selfies tacos. Fanny pack vaporware disrupt health goth, organic snackwave heirloom jean shorts truffaut lo-fi stumptown.</p>
@@ -219,9 +219,9 @@
     
     <entry>
       <title>Yet another post with code samples</title>
-      <link href="https://eleventyduo.netlify.app/posts/yet-another-post-with-code-samples/"/>
+      <link href="https://benliu.me/posts/yet-another-post-with-code-samples/"/>
       <updated>2020-11-26T00:00:00+00:00</updated>
-      <id>https://eleventyduo.netlify.app/posts/yet-another-post-with-code-samples/</id>
+      <id>https://benliu.me/posts/yet-another-post-with-code-samples/</id>
       <content type="html">
         <![CDATA[
       <p>Health goth raw denim vaporware waistcoat, vegan neutra glossier. Cronut chartreuse tbh meh schlitz. Snackwave lumbersexual pinterest narwhal, single-origin coffee coloring book selfies tacos. Fanny pack vaporware disrupt health goth, organic snackwave heirloom jean shorts truffaut lo-fi stumptown.</p>
@@ -243,9 +243,9 @@
     
     <entry>
       <title>A post with rich media</title>
-      <link href="https://eleventyduo.netlify.app/posts/a-post-with-rich-media/"/>
+      <link href="https://benliu.me/posts/a-post-with-rich-media/"/>
       <updated>2020-12-20T00:00:00+00:00</updated>
-      <id>https://eleventyduo.netlify.app/posts/a-post-with-rich-media/</id>
+      <id>https://benliu.me/posts/a-post-with-rich-media/</id>
       <content type="html">
         <![CDATA[
       <p>The last person we talked to said this would be ready action item, and what do you feel you would bring to the table if you were hired for this position bells and whistles. Rock Star/Ninja UI put a record on and see who dances, or cannibalize. We need to socialize the comms with the wider stakeholder community we need to future-proof this forcing function or get six alpha pups in here for a focus group. Helicopter view quarterly sales are at an all-time low so future-proof going forward we’re ahead of the curve on that one yet due diligence, so get buy-in. Back to the drawing-board action item get six alpha pups in here for a focus group ramp up.</p>
@@ -266,9 +266,9 @@
     
     <entry>
       <title>Another post with rich media</title>
-      <link href="https://eleventyduo.netlify.app/posts/another-post-with-rich-media/"/>
+      <link href="https://benliu.me/posts/another-post-with-rich-media/"/>
       <updated>2020-12-21T00:00:00+00:00</updated>
-      <id>https://eleventyduo.netlify.app/posts/another-post-with-rich-media/</id>
+      <id>https://benliu.me/posts/another-post-with-rich-media/</id>
       <content type="html">
         <![CDATA[
       <p>The last person we talked to said this would be ready action item, and what do you feel you would bring to the table if you were hired for this position bells and whistles. Rock Star/Ninja UI put a record on and see who dances, or cannibalize. We need to socialize the comms with the wider stakeholder community we need to future-proof this forcing function or get six alpha pups in here for a focus group. Helicopter view quarterly sales are at an all-time low so future-proof going forward we’re ahead of the curve on that one yet due diligence, so get buy-in. Back to the drawing-board action item get six alpha pups in here for a focus group ramp up.</p>
@@ -289,9 +289,9 @@
     
     <entry>
       <title>Even yet another post with rich media</title>
-      <link href="https://eleventyduo.netlify.app/posts/even-yet-another-post-with-rich-media/"/>
+      <link href="https://benliu.me/posts/even-yet-another-post-with-rich-media/"/>
       <updated>2020-12-24T00:00:00+00:00</updated>
-      <id>https://eleventyduo.netlify.app/posts/even-yet-another-post-with-rich-media/</id>
+      <id>https://benliu.me/posts/even-yet-another-post-with-rich-media/</id>
       <content type="html">
         <![CDATA[
       <p>The last person we talked to said this would be ready action item, and what do you feel you would bring to the table if you were hired for this position bells and whistles. Rock Star/Ninja UI put a record on and see who dances, or cannibalize. We need to socialize the comms with the wider stakeholder community we need to future-proof this forcing function or get six alpha pups in here for a focus group. Helicopter view quarterly sales are at an all-time low so future-proof going forward we’re ahead of the curve on that one yet due diligence, so get buy-in. Back to the drawing-board action item get six alpha pups in here for a focus group ramp up.</p>
@@ -312,9 +312,9 @@
     
     <entry>
       <title>Yet another post with rich media</title>
-      <link href="https://eleventyduo.netlify.app/posts/yet-another-post-with-rich-media/"/>
+      <link href="https://benliu.me/posts/yet-another-post-with-rich-media/"/>
       <updated>2020-12-28T00:00:00+00:00</updated>
-      <id>https://eleventyduo.netlify.app/posts/yet-another-post-with-rich-media/</id>
+      <id>https://benliu.me/posts/yet-another-post-with-rich-media/</id>
       <content type="html">
         <![CDATA[
       <p>The last person we talked to said this would be ready action item, and what do you feel you would bring to the table if you were hired for this position bells and whistles. Rock Star/Ninja UI put a record on and see who dances, or cannibalize. We need to socialize the comms with the wider stakeholder community we need to future-proof this forcing function or get six alpha pups in here for a focus group. Helicopter view quarterly sales are at an all-time low so future-proof going forward we’re ahead of the curve on that one yet due diligence, so get buy-in. Back to the drawing-board action item get six alpha pups in here for a focus group ramp up.</p>
