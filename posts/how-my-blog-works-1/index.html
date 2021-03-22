@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href=https://benliu.me/posts/how-my-blog-works-1/>
+
+    <link href="/assets/main.990a5d292b2eafcd9999.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+
+    <title>
+      How my blog works - (1)
+      
+         | Ben Liu | Full-stack Engineer Blog
+      
+    </title>
+
+    <link rel="icon" type= “image/x-icon” href="/images/favicon.ico">
+
+    <meta property="og:title" content="How my blog works - (1)">
+    <meta property="og:site_name" content="Ben Liu | Full-stack Engineer Blog"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://benliu.me/posts/how-my-blog-works-1/"/>
+    <meta name="twitter:card" content="summary_large_image">
+
+    
+      <meta name="twitter:creator" content="@author_handle"/>
+    
+
+    
+    
+    
+      <meta name="description" content="introduction to the architech on this website">
+      <meta property="og:description" content="introduction to the architech on this website">
+      <meta name="description" content="introduction to the architech on this website"/>
+    
+
+    
+      
+    
+    
+      <meta property="og:image" content="https://benliu.me/images/default-social-image.png"/>
+      <meta name="twitter:image" content="https://benliu.me/images/default-social-image.png"/>
+    
+
+    
+      <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+      <script>mermaid.initialize({startOnLoad:true});</script>
+    
+  </head>
+  <body>
+    <div class="layout-wrapper">
+
+      <header class="header">
+        <div class="header__content">
+          <h1 class="site-title">
+            <a href=/>
+              Ben Liu | Full-stack Engineer Blog
+            </a>
+          </h1>
+
+          
+            <nav class="nav">
+              <ul class="nav__list">
+                
+                  
+                  
+
+                  
+
+                  
+
+                  <li class="nav-item">
+                    <a href="/blog"  >Blog</a>
+                  </li>
+                
+                  
+                  
+
+                  
+
+                  
+
+                  <li class="nav-item">
+                    <a href="/about"  >About</a>
+                  </li>
+                
+              </ul>
+            </nav>
+
+          
+
+        </div>
+      </header>
+
+      <main class="main">
+        
+<article class="post">
+  <header class="post__header">
+    <h1>How my blog works - (1)</h1>
+    <div class="post__details">
+      <time datetime="2021-03-10">
+        10 Mar 2021
+      </time>
+      <span> | </span>
+      <span>2 min read</span>
+    </div>
+  </header>
+
+  <main class="post__content">
+    <p>It's the first post of my blog and I would like to explain how my blog works from the bottom to the top with github-eco-system.</p>
+<p>I would start from the static website generator <a href="https://www.11ty.dev/">11ty</a> with theme template Eleventy Duo. Then I would explain the deployment on github page with simple github action. Last, I would end up on using hackmd to add/update my blog posts.</p>
+<p>This project, surrounds github eco-system, bases and only bases on github repository, gh-page, and github-actions.</p>
+<h2>Use eleventy-duo template</h2>
+<p>First, use the <a href="https://github.com/yinkakun/eleventy-duo">eleventy-duo template</a> to kick-off the repository. It's a minimal, clean and neat blog template. You can simply click the <code>Use this template</code> button on the top right of eleventy-duo github repo.</p>
+<p>Cool, you can install the node dependencies and start the dev server after you cloned your project.</p>
+<pre class="language-shell"><code class="language-shell"><span class="token function">yarn</span> <span class="token operator">&amp;&amp;</span> <span class="token function">yarn</span> dev</code></pre>
+<h2>Setup github action</h2>
+<p>This section introduces you the github action and ship the website to github-pages. Eleventy duo is using netlify to integration, deployment and hosting the website as recommended. You can skip this section if you would like to use netlify to deploy and hosting.</p>
+<h3>Setup github page publish scripts</h3>
+<p>I recommend to deploy your static page to github pages by <code>gh-pages</code> script. It makes your life easier keep the same scripts on CI and local, deploy static page in one line, and simply tweak the advanced options. Adding two lines of scripts in the <code>package.json</code> then we are ready to move on.</p>
+<p>Note: You can replace this step with a pure <a href="https://github.com/peaceiris/actions-gh-pages">github page deployment action</a>. Don't forget to build the static page before publishing it.</p>
+<pre class="language-shell"><code class="language-shell"><span class="token function">yarn</span> <span class="token function">add</span> -D gh-pages</code></pre>
+<pre class="language-json"><code class="language-json"><span class="token comment">// package.json</span><br><span class="token comment">// adding two scripts</span><br><span class="token property">"scripts"</span><span class="token operator">:</span> <span class="token punctuation">{</span><br>    <span class="token property">"predeploy"</span><span class="token operator">:</span> <span class="token string">"yarn build"</span><span class="token punctuation">,</span><br>    <span class="token property">"deploy"</span><span class="token operator">:</span> <span class="token string">"gh-pages -d public"</span><br><span class="token punctuation">}</span></code></pre>
+<h3>Setup github action deploy workflow</h3>
+<p>&quot;As a tech blogger, I like to let the workflow take over most of my manual work so that I can more focus on writing new posts.&quot; Yeah, this is exactly what I want when I setup this blog on gh-pages. Therefore, I draw an flow chart to review my idea. I reckon it's decent enough for now. You should setup the auto deployment when you have your own blog.</p>
+<pre class="mermaid">graph LR
+    P[Push] -->|Install dependency| B[Build]
+    B --> C{master branch commit}
+    C -->|YES| D[Deploy to GH-Pages]
+    C -->|NO| E(Do Nothing)
+</pre>
+<p>After the diagram, converting the workflow diagram to be a read workflow.</p>
+<pre class="language-yaml"><code class="language-yaml"><span class="token comment"># .github/workflows/ci.yml</span><br><span class="token key atrule">name</span><span class="token punctuation">:</span> CI<br><br><span class="token key atrule">on</span><span class="token punctuation">:</span><br>  <span class="token key atrule">push</span><span class="token punctuation">:</span><br>    <span class="token key atrule">branches-ignore</span><span class="token punctuation">:</span><br>      <span class="token punctuation">-</span> <span class="token string">"gh-pages"</span><br><br><span class="token key atrule">env</span><span class="token punctuation">:</span><br>  <span class="token key atrule">node_version</span><span class="token punctuation">:</span> <span class="token string">"14.x"</span><br><br><span class="token key atrule">jobs</span><span class="token punctuation">:</span><br>  <span class="token key atrule">deploy</span><span class="token punctuation">:</span><br>    <span class="token key atrule">runs-on</span><span class="token punctuation">:</span> ubuntu<span class="token punctuation">-</span>latest<br>    <span class="token key atrule">steps</span><span class="token punctuation">:</span><br>      <span class="token punctuation">-</span> <span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/checkout@v2<br>      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Setup Node.js<br>        <span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/setup<span class="token punctuation">-</span>node@v1<br>        <span class="token key atrule">with</span><span class="token punctuation">:</span><br>          <span class="token key atrule">node-version</span><span class="token punctuation">:</span> $<br>      <span class="token punctuation">-</span> <span class="token key atrule">uses</span><span class="token punctuation">:</span> c<span class="token punctuation">-</span>hive/gha<span class="token punctuation">-</span>yarn<span class="token punctuation">-</span>cache@v1<br>      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Install JS dependencies<br>        <span class="token key atrule">run</span><span class="token punctuation">:</span> yarn install<br>      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> build<br>        <span class="token key atrule">run</span><span class="token punctuation">:</span> yarn build<br>      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> publish<br>        <span class="token key atrule">if</span><span class="token punctuation">:</span> github.ref == 'refs/heads/master'<br>        <span class="token key atrule">run</span><span class="token punctuation">:</span> <span class="token punctuation">|</span><span class="token scalar string"><br>          git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git<br>          yarn deploy --user "github-actions-bot &lt;support+actions@github.com>"</span><br>        <span class="token key atrule">env</span><span class="token punctuation">:</span><br>          <span class="token key atrule">GITHUB_TOKEN</span><span class="token punctuation">:</span> $<br></code></pre>
+<p>Alright, everything on the infrastructure are set. The github actions a.k.a. workflow takes care of the build and publish the static pages to github pages.</p>
+<p>I would explain how do I add/update the posts without forestry in the next article.</p>
+<p>Thanks for reading.</p>
+
+  </main>
+
+  <aside class="post__aside">
+    <div class="post__tags">
+      
+        
+        <a href="/tags/11ty/">#11ty</a>
+      
+        
+        <a href="/tags/github/">#github</a>
+      
+        
+        <a href="/tags/github-action/">#github-action</a>
+      
+        
+        <a href="/tags/github-pages/">#github-pages</a>
+      
+        
+        <a href="/tags/gh-pages/">#gh-pages</a>
+      
+        
+        <a href="/tags/hackmd/">#hackmd</a>
+      
+    </div>
+
+    <nav class="post__pagination">
+
+        <a href="/posts/yet-another-post-with-rich-media/">
+          <span>Yet another post with rich media</span>
+          <span>→</span>
+        </a>
+
+      
+    </nav>
+  </aside>
+
+</article>
+      </main>
+
+      <footer class="footer">
+        <div class="footer__content">
+
+          <ul class="hero__social-links">
+            
+              
+                
+
+                
+                  
+                
+
+                <li>
+                  <a href="https://www.linkedin.com/in/ben-liu" target="_blank" rel="noopener noreferrer" >LinkedIn</a>
+                </li>
+              
+                
+
+                
+                  
+                
+
+                <li>
+                  <a href="https://github.com/ben196888" target="_blank" rel="noopener noreferrer" >GitHub</a>
+                </li>
+              
+            
+
+            
+
+              
+                
+
+                
+                  
+                
+
+                <li>
+                  <a href="/feed.xml" target="_blank" rel="noopener noreferrer" >RSS</a>
+                </li>
+              
+            
+          </ul>
+
+          
+            <p class="footer__attribution">
+          Created by
+      <a href="https://twitter.com/yinkakun" target="_blank" rel="noopener">Yinka,</a>
+       Powered by <a href="https://www.11ty.dev" target="_blank" rel="noopener">11ty,</a>
+        Checkout <a href="https://github.com/yinkakun/eleventy-duo" target="_blank" rel="noopener noreferrer">project's github repo </a>
+            </p>
+          
+
+        </div>
+      </div>
+
+    </footer>
+
+    <script src="/assets/main.31d6cfe0d16ae931b73c.js"></script>
+  </body>
+</html>

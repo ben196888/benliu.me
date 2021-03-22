@@ -5,7 +5,7 @@
   <link href="https://benliu.me/feed.xml" rel="self"/>
   <link href="https://benliu.me/"/>
   
-    <updated>2020-12-28T00:00:00+00:00</updated>
+    <updated>2021-03-10T00:00:00+00:00</updated>
   
   <id>https://benliu.me</id>
   <author>
@@ -327,6 +327,46 @@
 <h2>Audio</h2>
 <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/422530128&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/louie-zong" title="Louie Zong" target="_blank" style="color: #cccccc; text-decoration: none;">Louie Zong</a> · <a href="https://soundcloud.com/louie-zong/hello-world" title="hello world" target="_blank" style="color: #cccccc; text-decoration: none;">hello world</a></div>
 <p>At the end of the day. Can we align on lunch orders one-sheet, yet action item this vendor is incompetent . Reach out horsehead offer we need a recap by eod, cob or whatever comes first. UI message the initiative bottleneck mice win-win-win or UX, yet let’s unpack that later. Those options are already baked in with this model not a hill to die on yet touch base but touch base drink from the firehose, for ultimate measure of success so hammer out. Not the long pole in my tent. The last person we talked to said this would be ready pushback. Viral engagement granularity organic growth. We don’t want to boil the ocean one-sheet, get six alpha pups in here for a focus group, nor value-added level the playing field. Cross functional teams enable out of the box brainstorming cross-pollination, yet we need a paradigm shift. Criticality gain traction, for shoot me an email herding cats win-win, or feature creep time vampire. Cloud strategy.</p>
+
+    ]]>
+      </content>
+    </entry>
+  
+    
+    <entry>
+      <title>How my blog works - (1)</title>
+      <link href="https://benliu.me/posts/how-my-blog-works-1/"/>
+      <updated>2021-03-10T00:00:00+00:00</updated>
+      <id>https://benliu.me/posts/how-my-blog-works-1/</id>
+      <content type="html">
+        <![CDATA[
+      <p>It's the first post of my blog and I would like to explain how my blog works from the bottom to the top with github-eco-system.</p>
+<p>I would start from the static website generator <a href="https://www.11ty.dev/">11ty</a> with theme template Eleventy Duo. Then I would explain the deployment on github page with simple github action. Last, I would end up on using hackmd to add/update my blog posts.</p>
+<p>This project, surrounds github eco-system, bases and only bases on github repository, gh-page, and github-actions.</p>
+<h2>Use eleventy-duo template</h2>
+<p>First, use the <a href="https://github.com/yinkakun/eleventy-duo">eleventy-duo template</a> to kick-off the repository. It's a minimal, clean and neat blog template. You can simply click the <code>Use this template</code> button on the top right of eleventy-duo github repo.</p>
+<p>Cool, you can install the node dependencies and start the dev server after you cloned your project.</p>
+<pre class="language-shell"><code class="language-shell"><span class="token function">yarn</span> <span class="token operator">&amp;&amp;</span> <span class="token function">yarn</span> dev</code></pre>
+<h2>Setup github action</h2>
+<p>This section introduces you the github action and ship the website to github-pages. Eleventy duo is using netlify to integration, deployment and hosting the website as recommended. You can skip this section if you would like to use netlify to deploy and hosting.</p>
+<h3>Setup github page publish scripts</h3>
+<p>I recommend to deploy your static page to github pages by <code>gh-pages</code> script. It makes your life easier keep the same scripts on CI and local, deploy static page in one line, and simply tweak the advanced options. Adding two lines of scripts in the <code>package.json</code> then we are ready to move on.</p>
+<p>Note: You can replace this step with a pure <a href="https://github.com/peaceiris/actions-gh-pages">github page deployment action</a>. Don't forget to build the static page before publishing it.</p>
+<pre class="language-shell"><code class="language-shell"><span class="token function">yarn</span> <span class="token function">add</span> -D gh-pages</code></pre>
+<pre class="language-json"><code class="language-json"><span class="token comment">// package.json</span><br><span class="token comment">// adding two scripts</span><br><span class="token property">"scripts"</span><span class="token operator">:</span> <span class="token punctuation">{</span><br>    <span class="token property">"predeploy"</span><span class="token operator">:</span> <span class="token string">"yarn build"</span><span class="token punctuation">,</span><br>    <span class="token property">"deploy"</span><span class="token operator">:</span> <span class="token string">"gh-pages -d public"</span><br><span class="token punctuation">}</span></code></pre>
+<h3>Setup github action deploy workflow</h3>
+<p>&quot;As a tech blogger, I like to let the workflow take over most of my manual work so that I can more focus on writing new posts.&quot; Yeah, this is exactly what I want when I setup this blog on gh-pages. Therefore, I draw an flow chart to review my idea. I reckon it's decent enough for now. You should setup the auto deployment when you have your own blog.</p>
+<pre class="mermaid">graph LR
+    P[Push] -->|Install dependency| B[Build]
+    B --> C{master branch commit}
+    C -->|YES| D[Deploy to GH-Pages]
+    C -->|NO| E(Do Nothing)
+</pre>
+<p>After the diagram, converting the workflow diagram to be a read workflow.</p>
+<pre class="language-yaml"><code class="language-yaml"><span class="token comment"># .github/workflows/ci.yml</span><br><span class="token key atrule">name</span><span class="token punctuation">:</span> CI<br><br><span class="token key atrule">on</span><span class="token punctuation">:</span><br>  <span class="token key atrule">push</span><span class="token punctuation">:</span><br>    <span class="token key atrule">branches-ignore</span><span class="token punctuation">:</span><br>      <span class="token punctuation">-</span> <span class="token string">"gh-pages"</span><br><br><span class="token key atrule">env</span><span class="token punctuation">:</span><br>  <span class="token key atrule">node_version</span><span class="token punctuation">:</span> <span class="token string">"14.x"</span><br><br><span class="token key atrule">jobs</span><span class="token punctuation">:</span><br>  <span class="token key atrule">deploy</span><span class="token punctuation">:</span><br>    <span class="token key atrule">runs-on</span><span class="token punctuation">:</span> ubuntu<span class="token punctuation">-</span>latest<br>    <span class="token key atrule">steps</span><span class="token punctuation">:</span><br>      <span class="token punctuation">-</span> <span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/checkout@v2<br>      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Setup Node.js<br>        <span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/setup<span class="token punctuation">-</span>node@v1<br>        <span class="token key atrule">with</span><span class="token punctuation">:</span><br>          <span class="token key atrule">node-version</span><span class="token punctuation">:</span> $<br>      <span class="token punctuation">-</span> <span class="token key atrule">uses</span><span class="token punctuation">:</span> c<span class="token punctuation">-</span>hive/gha<span class="token punctuation">-</span>yarn<span class="token punctuation">-</span>cache@v1<br>      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Install JS dependencies<br>        <span class="token key atrule">run</span><span class="token punctuation">:</span> yarn install<br>      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> build<br>        <span class="token key atrule">run</span><span class="token punctuation">:</span> yarn build<br>      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> publish<br>        <span class="token key atrule">if</span><span class="token punctuation">:</span> github.ref == 'refs/heads/master'<br>        <span class="token key atrule">run</span><span class="token punctuation">:</span> <span class="token punctuation">|</span><span class="token scalar string"><br>          git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git<br>          yarn deploy --user "github-actions-bot &lt;support+actions@github.com>"</span><br>        <span class="token key atrule">env</span><span class="token punctuation">:</span><br>          <span class="token key atrule">GITHUB_TOKEN</span><span class="token punctuation">:</span> $<br></code></pre>
+<p>Alright, everything on the infrastructure are set. The github actions a.k.a. workflow takes care of the build and publish the static pages to github pages.</p>
+<p>I would explain how do I add/update the posts without forestry in the next article.</p>
+<p>Thanks for reading.</p>
 
     ]]>
       </content>
