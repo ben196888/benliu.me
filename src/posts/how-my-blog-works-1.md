@@ -18,7 +18,7 @@ First, use the [eleventy-duo template](https://github.com/yinkakun/eleventy-duo)
 
 Cool, you can install the node dependencies and start the dev server after you cloned your project. 
 
-```shell=
+```shell
 yarn && yarn dev
 ```
 
@@ -33,11 +33,11 @@ I recommend to deploy your static page to github pages by `gh-pages` script. It 
 
 Note: You can replace this step with a pure [github page deployment action](https://github.com/peaceiris/actions-gh-pages). Don't forget to build the static page before publishing it.
 
-```shell=
+```shell
 yarn add -D gh-pages
 ```
 
-```json=
+```json
 // package.json
 // adding two scripts
 "scripts": {
@@ -60,7 +60,7 @@ graph LR
 
 After the diagram, converting the workflow diagram to be a read workflow.
 
-```yaml=
+```yaml
 # .github/workflows/ci.yml
 name: CI
 
