@@ -16,7 +16,7 @@ This project, surrounds github eco-system, bases and only bases on github reposi
 
 First, use the [eleventy-duo template](https://github.com/yinkakun/eleventy-duo) to kick-off the repository. It's a minimal, clean and neat blog template. You can simply click the `Use this template` button on the top right of eleventy-duo github repo.
 
-Cool, you can install the node dependencies and start the dev server after you cloned your project. 
+Cool, you can install the node dependencies and start the dev server after you cloned your project.
 
 ```shell
 yarn && yarn dev
@@ -25,7 +25,7 @@ yarn && yarn dev
 ## Setup github action
 
 
-This section introduces you the github action and ship the website to github-pages. Eleventy duo is using netlify to integration, deployment and hosting the website as recommended. You can skip this section if you would like to use netlify to deploy and hosting. 
+This section introduces you the github action and ship the website to github-pages. Eleventy duo is using netlify to integration, deployment and hosting the website as recommended. You can skip this section if you would like to use netlify to deploy and hosting.
 
 ### Setup github page publish scripts
 
@@ -96,7 +96,7 @@ jobs:
 
 ```
 
-Alright, everything on the infrastructure are set. The github actions a.k.a. workflow takes care of the build and publish the static pages to github pages.
+Alright, everything on the infrastructure are set. The github actions a.k.a. workflow takes care of the build and publish the static pages to github pages. You can visit my blog [repository](https://github.com/ben196888/benliu.me) as a full example
 
 I would explain how do I add/update the posts without forestry in the next article.
 
