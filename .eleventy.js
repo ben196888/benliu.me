@@ -25,6 +25,13 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(readingTime);
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(syntaxHighlight);
+  const highlighter = eleventyConfig.markdownHighlighter;
+  eleventyConfig.addMarkdownHighlighter((str, language) => {
+    if (language === "mermaid") {
+      return `<pre class="mermaid">${str}</pre>`;
+    }
+    return highlighter(str, language);
+  });
 
   eleventyConfig.setDataDeepMerge(true);
   eleventyConfig.addPassthroughCopy({ 'src/images': 'images' });
