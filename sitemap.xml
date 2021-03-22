@@ -4,141 +4,9 @@
   
     
       <url>
-        <loc>https://benliu.me/posts/a-simple-post/</loc>
-        
-          <lastmod>2020-10-18T00:00:00.000Z</lastmod>
-        
-        
-        
-      </url>
-    
-  
-    
-      <url>
-        <loc>https://benliu.me/posts/another-simple-post/</loc>
-        
-          <lastmod>2020-10-22T00:00:00.000Z</lastmod>
-        
-        
-        
-      </url>
-    
-  
-    
-      <url>
-        <loc>https://benliu.me/posts/even-yet-another-simple-post/</loc>
-        
-          <lastmod>2020-10-25T00:00:00.000Z</lastmod>
-        
-        
-        
-      </url>
-    
-  
-    
-      <url>
-        <loc>https://benliu.me/posts/yet-another-simple-post/</loc>
-        
-          <lastmod>2020-10-29T00:00:00.000Z</lastmod>
-        
-        
-        
-      </url>
-    
-  
-    
-      <url>
-        <loc>https://benliu.me/posts/a-post-with-code-samples/</loc>
-        
-          <lastmod>2020-11-18T00:00:00.000Z</lastmod>
-        
-        
-        
-      </url>
-    
-  
-    
-      <url>
         <loc>https://benliu.me/templates/post/</loc>
         
-          <lastmod>2020-11-18T00:00:00.000Z</lastmod>
-        
-        
-        
-      </url>
-    
-  
-    
-      <url>
-        <loc>https://benliu.me/posts/another-post-with-code-samples/</loc>
-        
-          <lastmod>2020-11-19T00:00:00.000Z</lastmod>
-        
-        
-        
-      </url>
-    
-  
-    
-      <url>
-        <loc>https://benliu.me/posts/even-yet-another-post-with-code-samples/</loc>
-        
-          <lastmod>2020-11-23T00:00:00.000Z</lastmod>
-        
-        
-        
-      </url>
-    
-  
-    
-      <url>
-        <loc>https://benliu.me/posts/yet-another-post-with-code-samples/</loc>
-        
-          <lastmod>2020-11-26T00:00:00.000Z</lastmod>
-        
-        
-        
-      </url>
-    
-  
-    
-      <url>
-        <loc>https://benliu.me/posts/a-post-with-rich-media/</loc>
-        
-          <lastmod>2020-12-20T00:00:00.000Z</lastmod>
-        
-        
-        
-      </url>
-    
-  
-    
-      <url>
-        <loc>https://benliu.me/posts/another-post-with-rich-media/</loc>
-        
-          <lastmod>2020-12-21T00:00:00.000Z</lastmod>
-        
-        
-        
-      </url>
-    
-  
-    
-      <url>
-        <loc>https://benliu.me/posts/even-yet-another-post-with-rich-media/</loc>
-        
-          <lastmod>2020-12-24T00:00:00.000Z</lastmod>
-        
-        
-        
-      </url>
-    
-  
-    
-      <url>
-        <loc>https://benliu.me/posts/yet-another-post-with-rich-media/</loc>
-        
-          <lastmod>2020-12-28T00:00:00.000Z</lastmod>
+          <lastmod>2021-01-01T00:00:00.000Z</lastmod>
         
         
         
@@ -160,7 +28,7 @@
       <url>
         <loc>https://benliu.me/about/</loc>
         
-          <lastmod>2021-03-22T07:59:30.028Z</lastmod>
+          <lastmod>2021-03-22T08:09:10.825Z</lastmod>
         
         
         
@@ -171,7 +39,7 @@
       <url>
         <loc>https://benliu.me/blog/</loc>
         
-          <lastmod>2021-03-22T07:59:30.028Z</lastmod>
+          <lastmod>2021-03-22T08:09:10.825Z</lastmod>
         
         
         
@@ -182,7 +50,7 @@
       <url>
         <loc>https://benliu.me/</loc>
         
-          <lastmod>2021-03-22T07:59:30.028Z</lastmod>
+          <lastmod>2021-03-22T08:09:10.825Z</lastmod>
         
         
         
@@ -193,51 +61,7 @@
       <url>
         <loc>https://benliu.me/robots.txt</loc>
         
-          <lastmod>2021-03-22T07:59:30.032Z</lastmod>
-        
-        
-        
-      </url>
-    
-  
-    
-      <url>
-        <loc>https://benliu.me/tags/demo-content/</loc>
-        
-          <lastmod>2021-03-22T07:59:30.032Z</lastmod>
-        
-        
-        
-      </url>
-    
-  
-    
-      <url>
-        <loc>https://benliu.me/tags/code/</loc>
-        
-          <lastmod>2021-03-22T07:59:30.032Z</lastmod>
-        
-        
-        
-      </url>
-    
-  
-    
-      <url>
-        <loc>https://benliu.me/tags/simple-post/</loc>
-        
-          <lastmod>2021-03-22T07:59:30.032Z</lastmod>
-        
-        
-        
-      </url>
-    
-  
-    
-      <url>
-        <loc>https://benliu.me/tags/media/</loc>
-        
-          <lastmod>2021-03-22T07:59:30.032Z</lastmod>
+          <lastmod>2021-03-22T08:09:10.829Z</lastmod>
         
         
         
@@ -248,7 +72,7 @@
       <url>
         <loc>https://benliu.me/tags/11ty/</loc>
         
-          <lastmod>2021-03-22T07:59:30.032Z</lastmod>
+          <lastmod>2021-03-22T08:09:10.829Z</lastmod>
         
         
         
@@ -259,7 +83,7 @@
       <url>
         <loc>https://benliu.me/tags/github/</loc>
         
-          <lastmod>2021-03-22T07:59:30.032Z</lastmod>
+          <lastmod>2021-03-22T08:09:10.829Z</lastmod>
         
         
         
@@ -270,7 +94,7 @@
       <url>
         <loc>https://benliu.me/tags/github-action/</loc>
         
-          <lastmod>2021-03-22T07:59:30.032Z</lastmod>
+          <lastmod>2021-03-22T08:09:10.829Z</lastmod>
         
         
         
@@ -281,7 +105,7 @@
       <url>
         <loc>https://benliu.me/tags/github-pages/</loc>
         
-          <lastmod>2021-03-22T07:59:30.032Z</lastmod>
+          <lastmod>2021-03-22T08:09:10.829Z</lastmod>
         
         
         
@@ -292,7 +116,7 @@
       <url>
         <loc>https://benliu.me/tags/gh-pages/</loc>
         
-          <lastmod>2021-03-22T07:59:30.032Z</lastmod>
+          <lastmod>2021-03-22T08:09:10.829Z</lastmod>
         
         
         
@@ -303,7 +127,84 @@
       <url>
         <loc>https://benliu.me/tags/hackmd/</loc>
         
-          <lastmod>2021-03-22T07:59:30.032Z</lastmod>
+          <lastmod>2021-03-22T08:09:10.829Z</lastmod>
+        
+        
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>https://benliu.me/templates/audio/</loc>
+        
+          <lastmod>2021-03-22T08:09:10.829Z</lastmod>
+        
+        
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>https://benliu.me/templates/blockquote/</loc>
+        
+          <lastmod>2021-03-22T08:09:10.829Z</lastmod>
+        
+        
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>https://benliu.me/templates/image/</loc>
+        
+          <lastmod>2021-03-22T08:09:10.829Z</lastmod>
+        
+        
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>https://benliu.me/templates/monospace/</loc>
+        
+          <lastmod>2021-03-22T08:09:10.829Z</lastmod>
+        
+        
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>https://benliu.me/templates/ordered_list/</loc>
+        
+          <lastmod>2021-03-22T08:09:10.829Z</lastmod>
+        
+        
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>https://benliu.me/templates/unordered_list/</loc>
+        
+          <lastmod>2021-03-22T08:09:10.829Z</lastmod>
+        
+        
+        
+      </url>
+    
+  
+    
+      <url>
+        <loc>https://benliu.me/templates/video/</loc>
+        
+          <lastmod>2021-03-22T08:09:10.829Z</lastmod>
         
         
         
